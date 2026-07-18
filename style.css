@@ -128,3 +128,38 @@ animation:twinkle infinite;
 100%{opacity:.2;}
 
 }
+/* Floating Hearts */
+
+.heart{
+
+position:fixed;
+
+font-size:24px;
+
+pointer-events:none;
+
+animation:heartFall linear forwards;
+
+z-index:9999;
+
+}
+
+@keyframes heartFall{
+
+0%{
+
+transform:translateY(-10vh) rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
