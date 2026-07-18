@@ -13,25 +13,47 @@ const yesButtons = document.querySelectorAll(".yes");
 
 const typing = document.getElementById("typing");
 
-const message = `My Dearest Little Alfi ❤️
+const message = 'My Dearest Little Alfi ❤️
 
 Congratulations on scoring 452 / 520 (86.92%)!
 
-Maybe today didn't feel as special as it should have...
+Maybe today no one celebrated you the way you deserved.
 
-But I want you to know that I'm incredibly proud of you.
+But today...
 
-Your hard work, patience, and determination brought you here.
+I want you to know something.
 
-This is only the beginning of your beautiful journey.
+Your marks are beautiful.
 
-Keep believing in yourself.
+Your hard work is beautiful.
 
-I'll always celebrate your victories, stand by you during your struggles, and cheer for every dream you chase.
+But YOU...
 
-Forever proud of you.
+are even more beautiful.
 
-❤️ Baby Aazi`;
+I am so proud of the person you are becoming.
+
+Keep smiling.
+
+Keep dreaming.
+
+Keep believing.
+
+Because your future is brighter than every star in this universe.
+
+No matter what happens...
+
+There will always be someone celebrating your victories...
+
+Someone praying for your happiness...
+
+Someone who will always be proud of you.
+
+❤️
+
+Forever Yours,
+
+Baby Aazi`;
 
 startBtn.onclick = () => {
 
