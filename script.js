@@ -122,3 +122,34 @@ stars.appendChild(star);
 }
 
 createStars();
+function heartRain(){
+
+const emojis=["❤️","💖","💕","🌹","✨"];
+
+setInterval(()=>{
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*25)+"px";
+
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},8000);
+
+},300);
+
+}
+
+heartRain();
