@@ -153,3 +153,43 @@ heart.remove();
 }
 
 heartRain();
+function fireworks(){
+
+const colors=[
+"#ff4da6",
+"#FFD700",
+"#00FFFF",
+"#FFFFFF",
+"#FF0000",
+"#00FF00"
+];
+
+setInterval(()=>{
+
+for(let i=0;i<25;i++){
+
+let f=document.createElement("div");
+
+f.className="firework";
+
+f.style.background=colors[Math.floor(Math.random()*colors.length)];
+
+f.style.left=(Math.random()*100)+"vw";
+
+f.style.top=(Math.random()*100)+"vh";
+
+document.body.appendChild(f);
+
+setTimeout(()=>{
+
+f.remove();
+
+},1000);
+
+}
+
+},4000);
+
+}
+
+fireworks();
