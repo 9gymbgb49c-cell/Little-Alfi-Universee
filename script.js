@@ -13,7 +13,7 @@ const yesButtons = document.querySelectorAll(".yes");
 
 const typing = document.getElementById("typing");
 
-const message = 'My Dearest Little Alfi ❤️
+const message = 'My Dearest Little Alfi ❤️';
 
 Congratulations on scoring 452 / 520 (86.92%)!
 
