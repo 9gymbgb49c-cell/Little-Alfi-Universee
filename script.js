@@ -15,15 +15,13 @@ const giftBtn = document.getElementById("giftBtn");
 const finalSection = document.getElementById("final");
 const ultimateSection = document.getElementById("ultimate");
 
-console.log(giftBtn);
-console.log(ultimateSection);
-
 if (giftBtn) {
     giftBtn.addEventListener("click", () => {
         finalSection.classList.add("hidden");
         ultimateSection.classList.remove("hidden");
     });
 }
+
 
 const yesButtons = document.querySelectorAll(".yes");
 
