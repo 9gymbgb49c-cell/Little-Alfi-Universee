@@ -8,7 +8,7 @@ const ultimateSection = document.getElementById("ultimate");
 const startBtn = document.getElementById("startBtn");
 const continueBtn = document.getElementById("continue");
 const finishBtn = document.getElementById("finish");
-const giftBtn = document.getElementById("giftBtn");
+
 
 const yesButtons = document.querySelectorAll(".yes");
 
