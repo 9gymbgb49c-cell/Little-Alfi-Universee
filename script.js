@@ -163,3 +163,49 @@ function fireworks() {
 }
 
 fireworks();
+function shootingStars(){
+
+setInterval(()=>{
+
+const star=document.createElement("div");
+
+star.style.position="fixed";
+
+star.style.width="3px";
+
+star.style.height="120px";
+
+star.style.background="linear-gradient(white,transparent)";
+
+star.style.left=Math.random()*window.innerWidth+"px";
+
+star.style.top="-150px";
+
+star.style.transform="rotate(45deg)";
+
+star.style.zIndex="999";
+
+star.style.pointerEvents="none";
+
+star.style.transition="all 1.8s linear";
+
+document.body.appendChild(star);
+
+setTimeout(()=>{
+
+star.style.transform="translate(350px,700px) rotate(45deg)";
+star.style.opacity="0";
+
+},100);
+
+setTimeout(()=>{
+
+star.remove();
+
+},2200);
+
+},2500);
+
+}
+
+shootingStars();
