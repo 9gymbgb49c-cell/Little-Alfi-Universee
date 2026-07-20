@@ -7,6 +7,14 @@ const finalPage = document.getElementById("final");
 const startBtn = document.getElementById("startBtn");
 const continueBtn = document.getElementById("continue");
 const finishBtn = document.getElementById("finish");
+const giftBtn = document.getElementById("giftBtn");
+const finalSection = document.getElementById("final");
+const ultimateSection = document.getElementById("ultimate");
+
+giftBtn.addEventListener("click", () => {
+    finalSection.classList.add("hidden");
+    ultimateSection.classList.remove("hidden");
+});
 
 const yesButtons = document.querySelectorAll(".yes");
 
