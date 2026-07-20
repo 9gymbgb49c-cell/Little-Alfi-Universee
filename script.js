@@ -11,6 +11,7 @@ const finishBtn = document.getElementById("finish");
 const yesButtons = document.querySelectorAll(".yes");
 
 const typing = document.getElementById("typing");
+const bgMusic = document.getElementById("bgMusic");
 
 const message = `My Dearest Little Alfi ❤️
 
@@ -55,6 +56,10 @@ Forever Yours,
 Baby Aazi`;
 
 startBtn.onclick = () => {
+    if (bgMusic) {
+        bgMusic.play().catch(() => {});
+    }
+
     intro.classList.add("hidden");
     question.classList.remove("hidden");
 };
