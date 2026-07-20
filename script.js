@@ -209,3 +209,30 @@ star.remove();
 }
 
 shootingStars();
+function roseRain(){
+
+setInterval(()=>{
+
+const rose=document.createElement("div");
+
+rose.className="rose";
+
+rose.innerHTML="🌹";
+
+rose.style.left=Math.random()*100+"vw";
+
+rose.style.animationDuration=(6+Math.random()*4)+"s";
+
+document.body.appendChild(rose);
+
+setTimeout(()=>{
+
+rose.remove();
+
+},9000);
+
+},1200);
+
+}
+
+roseRain();
