@@ -249,3 +249,17 @@ box-shadow:0 0 40px hotpink;
 100%{transform:scale(1);}
 
 }
+body{
+margin:0;
+overflow-x:hidden;
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#020111,#090A2A,#1B1240,#070B34);
+background-size:400%;
+animation:bgMove 15s infinite;
+}
+
+@keyframes bgMove{
+0%{background-position:0%;}
+50%{background-position:100%;}
+100%{background-position:0%;}
+}
